@@ -80,72 +80,70 @@ export default function Home() {
       {/* ================================================= */}
       {/* NAVBAR */}
       {/* ================================================= */}
+<nav className="relative z-20 mx-auto w-full max-w-6xl px-5 pt-5 sm:px-8">
 
-      <nav className="relative z-20 mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
+  <div className="flex items-center justify-between rounded-3xl border border-yellow-400/10 bg-yellow-950/20 px-5 py-4 shadow-xl shadow-yellow-950/20 backdrop-blur-xl sm:px-6">
 
-        <div className="flex items-center gap-3">
+    {/* Logo + Brand */}
+    <div className="flex items-center gap-3">
 
-          <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-yellow-400/20 bg-white/5 shadow-lg shadow-yellow-500/10 backdrop-blur-xl">
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full border border-yellow-400/20 bg-white shadow-lg shadow-yellow-500/10">
+        <img
+          src="/logo.png"
+          alt="KrishAIWorks"
+          className="h-full w-full rounded-full object-cover"
+        />
+      </div>
 
-            <img
-              src="/logo.png"
-              alt="KrishAIWorks"
-              className="h-full w-full rounded-full object-cover"
-            />
+      <div>
+        <h2 className="text-base font-bold text-white sm:text-lg">
+          KrishAIWorks
+        </h2>
 
-          </div>
+        <p className="text-[10px] text-zinc-500 sm:text-xs">
+          AI Solutions That Work
+        </p>
+      </div>
 
-          <div>
+    </div>
 
-            <h2 className="text-sm font-bold text-white sm:text-base">
-              KrishAIWorks
-            </h2>
+    {/* Desktop */}
+    <div className="hidden items-center gap-7 text-sm text-zinc-300 md:flex">
 
-            <p className="text-[10px] text-zinc-400 sm:text-xs">
-              AI Solutions That Work
-            </p>
+      <a href="#features" className="transition hover:text-yellow-300">
+        Features
+      </a>
 
-          </div>
+      <a href="#how" className="transition hover:text-yellow-300">
+        How To Use
+      </a>
 
-        </div>
+      <a href="#faq" className="transition hover:text-yellow-300">
+        FAQ
+      </a>
 
-        <div className="hidden items-center gap-7 text-sm text-zinc-300 md:flex">
+      <a
+        href="https://instagram.com/KrishAIWorks"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-yellow-400/20 bg-yellow-500/5 px-5 py-2 font-medium text-yellow-300 shadow-lg shadow-yellow-500/10 transition hover:bg-yellow-500/10"
+      >
+        Follow
+      </a>
 
-          <a
-            href="#features"
-            className="transition hover:text-yellow-300"
-          >
-            Features
-          </a>
+    </div>
 
-          <a
-            href="#how"
-            className="transition hover:text-yellow-300"
-          >
-            How To Use
-          </a>
+    {/* Mobile */}
+    <button
+      type="button"
+      className="rounded-full border border-yellow-400/20 bg-yellow-500/5 px-5 py-2 text-xs text-yellow-300 transition hover:bg-yellow-500/10 md:hidden"
+    >
+      Menu
+    </button>
 
-          <a
-            href="#faq"
-            className="transition hover:text-yellow-300"
-          >
-            FAQ
-          </a>
+  </div>
 
-          <a
-            href="#"
-            className="rounded-full bg-yellow-500 px-5 py-2 font-medium text-black shadow-lg shadow-yellow-500/20 transition hover:bg-yellow-400"
-          >
-            Follow
-          </a>
-
-        </div>
-
-        <button className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-zinc-300 md:hidden">
-          Menu
-        </button>
-
-      </nav>
+</nav>
 
       {/* ================================================= */}
       {/* HERO */}
